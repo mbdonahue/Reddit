@@ -1,8 +1,5 @@
 <h1>Listing posts</h1>
 
-
-
-
     <% @posts.each do |post| %>
     <row>
     <div class= 'well'>
@@ -12,9 +9,9 @@
 <p>
           <% if user_signed_in? %>
             <% if current_user.id == post.user_id%>
-          <td><%= link_to 'Show', post %></td>
-          <td><%= link_to 'Edit', edit_post_path(post) %></td>
-          <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <%= link_to 'Show', post %>
+          <%= link_to 'Edit', edit_post_path(post) %>
+          <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
           <%end%>
           <%end%>
         </p>
