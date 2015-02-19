@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
-=======
+
   resources :posts
 
->>>>>>> 2474498b5bdf12a1da6b05f430b1246a8541ec99
   devise_for :users
   get 'welcome/index'
 

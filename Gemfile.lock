@@ -28,10 +28,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-<<<<<<< HEAD
-=======
     bcrypt (3.1.10)
->>>>>>> 2474498b5bdf12a1da6b05f430b1246a8541ec99
     bcrypt (3.1.10-x86-mingw32)
     builder (3.2.2)
     coffee-rails (4.0.1)
