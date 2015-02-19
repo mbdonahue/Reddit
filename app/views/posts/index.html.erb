@@ -6,6 +6,17 @@
        <%= link_to post.title, "http://#{post.url}" %>
        <%= post.user.email %>
 
+       <p>
+    <% if user_signed_in? %>
+    <ul class = 'display: inline'>
+      <li class = "display: inline">Funny: <%= rating_for post, "funny" %></li>
+      <li class = 'display: inline'>Interesting: <%= rating_for post, "interesting" %></li>
+      <li>Interesting: <%= rating_for post, "interesting" %></li>
+      <li>Cool: <%= rating_for post, "cool" %></li>
+      <li>NSFW: <%= rating_for post, "nsfw" %></li>
+    </ul>
+    <% end %>
+      </p>
 <p>
          <% if user_signed_in? %>
            <% if current_user.id == post.user_id%>
